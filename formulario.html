@@ -1,12 +1,40 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-<link rel="stylesheet" href="formulario.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Contacto</title>
+    <!-- Enlazar hoja de estilos Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Enlazar hoja de estilos personalizada -->
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
 
 <form class="form">
-  <h2 class="icono-chat"><i class="bi bi-chat-dots"></i>Chat Aqui</h2>
-  <p type="Nombre:"><input placeholder="Escribe un nombre aqui.."></input></p>
-  <p type="Email:"><input placeholder="Escribe un Email.."></input></p>
-  <p type="Escribe tu mensaje:"><input placeholder="Que quieres saber de mi.."></input></p>
-  <button>Enviar mensaje</button>
- 
+  <h2 class="icono-chat"><i class="bi bi-chat-dots"></i>Chat Aquí</h2>
+  <!-- Campo de entrada para el nombre -->
+  <p type="Nombre:"><input class="form-control" name="nombre" placeholder="Escribe un nombre aquí.."></p>
+  <!-- Campo de entrada para el correo electrónico -->
+  <p type="Email:"><input class="form-control" name="email" placeholder="Escribe un Email.."></p>
+  <!-- Campo de entrada para el mensaje -->
+  <p type="Escribe tu mensaje:"><input class="form-control" name="mensaje" placeholder="Qué quieres saber de mí.."></p>
+  <!-- Botón para enviar el mensaje -->
+  <button onclick="enviarMensaje()">Enviar mensaje</button>
 </form>
+
+<script>
+function enviarMensaje() {
+  // Accede a los datos del formulario
+  var nombre = document.querySelector("input[name='nombre']").value;
+  var email = document.querySelector("input[name='email']").value;
+  var mensaje = document.querySelector("input[name='mensaje']").value;
+
+  // Envía los datos al servidor
+  // Aquí puedes agregar código para enviar los datos a través de una solicitud HTTP (por ejemplo, mediante fetch o XMLHttpRequest)
+}
+</script>
+
+</body>
+</html>
