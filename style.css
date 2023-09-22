@@ -13,12 +13,14 @@ body {
 }
 
 /* Estilos para el contenedor principal */
+
 .wrapper {
   width: 100vw;
   height: 100vh;
   background-color: #09091d; /* Usar colores en notación hexadecimal */
   color: white;
   overflow: hidden; /* Evitar desplazamiento horizontal si el contenido es mayor */
+  margin: 0px;
 }
 
 /* Estilos para los enlaces del menú */
@@ -28,12 +30,10 @@ body {
   padding: 5px 10px;
 }
 
-/* Lista sin puntos de viñeta */
 .menu li {
   list-style: none;
 }
 
-/* Estilos para el enlace activo en el menú */
 .menu .active {
   color: aqua;
 }
@@ -62,12 +62,14 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 8mm; /* Cambiar a "8px" si se desea ajustar el espaciado */
+  padding: 8px; /* Cambiar a "8px" si se desea ajustar el espaciado */
 }
 
 /* Estilos para la imagen */
-.img {
-  padding: 100px 200px; /* Ajustar según se necesite */
+.main img {
+  width: 240px;
+  height: auto;
+  border: 7px solid #1464ee;
 }
 
 /* Estilos para la sección principal */
@@ -82,10 +84,14 @@ body {
 
 /* Estilos para títulos */
 h1, .h1 {
-  font-size: 24px; /* Cambio a "px" para establecer tamaño en píxeles */
+  font-size: 24px;
   background: linear-gradient(270deg, #e3c4ab, #091f64);
   -webkit-background-clip: text;
   -webkit-text-fill-color: #90b9c9;
+}
+
+.main .text-container {
+  margin-top: 100px;
 }
 
 /* Cambiar el color de las etiquetas <span> dentro de esta sección */
@@ -110,8 +116,22 @@ h1 span {
 }
 
 /* Estilos para las imágenes */
-.main img {
-  width: 240px; /* Ajustar dimensiones según se necesite */
-  height: auto; /* Altura ajustada automáticamente según la relación de aspecto */
-  border: 7px solid #1464ee; /* Usar colores en notación hexadecimal */
+@media (max-width: 768px) {
+  .main img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .main .text-container {
+    margin-top: 0px;
+  }
+
+  .main img {
+    border-color: #fff;
+  }
 }
+

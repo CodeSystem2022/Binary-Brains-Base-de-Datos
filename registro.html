@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
 </head>
 <body>
 
@@ -11,15 +12,21 @@
 <form action="registro.php" method="post">
     <!-- Campo de entrada para el nombre -->
     <input type="text" name="nombre" placeholder="Nombre" required>
+    <label for="nombre">Nombre</label>
     <!-- Campo de entrada para el correo electrónico -->
     <input type="email" name="correo" placeholder="Correo electrónico" required>
+    <label for="correo">Correo electrónico</label>
     <!-- Campo de entrada para la contraseña -->
     <input type="password" name="contraseña" placeholder="Contraseña" required>
+    <label for="contraseña">Contraseña</label>
     <!-- Campo de entrada para confirmar la contraseña -->
     <input type="password" name="confirmar_contraseña" placeholder="Confirmar contraseña" required>
+    <label for="confirmar_contraseña">Confirmar contraseña</label>
 
     <!-- Botón para enviar el formulario de registro -->
     <input type="submit" value="Registrarse">
+    <!-- Botón para cancelar el formulario -->
+    <input type="reset" value="Cancelar">
 </form>
 
 </body>
