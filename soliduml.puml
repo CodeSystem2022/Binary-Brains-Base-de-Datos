@@ -1,31 +1,25 @@
 @startuml
 
-' Definición de la clase base abstracta 'Animal
 class Animal {
-  +hacerSonido(): void // Método abstracto que representa la responsabilidad de hacer un sonido
+  +hacerSonido(): void
 }
 
-' Clase 'Perro' que hereda de 'Animal'
 class Perro {
-  +hacerSonido(): void // Implementación específica de 'hacerSonido' para un perro
+  +hacerSonido(): void
 }
 
-' Clase 'Gato' que hereda de 'Animal'
 class Gato {
-  +hacerSonido(): void // Implementación específica de 'hacerSonido' para un gato
+  +hacerSonido(): void
 }
 
-' Clase 'Robot' que no hereda de 'Animal' y tiene su propia responsabilidad
 class Robot {
-  +moverse(): void // Método que representa la responsabilidad de moverse para un robot
+  +moverse(): void
 }
 
-' Clase 'Veterinario' que realiza una acción en base a un 'Animal'
 class Veterinario {
-  +revisarAnimal(animal: Animal): void // Método que recibe un objeto de tipo 'Animal' para revisarlo
+  +revisarAnimal(animal: Animal): void
 }
 
-' Herencia: 'Perro' y 'Gato' son subclases de 'Animal'
 Animal <|-- Perro
 Animal <|-- Gato
 
