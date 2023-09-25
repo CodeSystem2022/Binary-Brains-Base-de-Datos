@@ -1,0 +1,23 @@
+@startuml
+abstract class Empleado {
+  - nombre: String
+  - edad: int
+  + getNombre(): String
+  + getEdad(): int
+  + calcularSalario(): double
+}
+
+class EmpleadoTiempoCompleto {
+  - salarioMensual: double
+  + calcularSalario(): double
+}
+
+class EmpleadoPorHoras {
+  - salarioPorHora: double
+  - horasTrabajadas: int
+  + calcularSalario(): double
+}
+
+Empleado <|-- EmpleadoTiempoCompleto
+Empleado <|-- EmpleadoPorHoras
+@enduml
