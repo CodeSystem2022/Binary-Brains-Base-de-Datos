@@ -8,16 +8,20 @@
 /* Fuente por defecto para todo el sitio */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white; /* Texto blanco */
 }
 
 /* Estilos para el contenedor principal */
 .wrapper, .contenedor {
   width: 100vw;
   height: 100vh;
-  background-color: #09091d; /* Usar colores en notación hexadecimal */
-  color: rgb(6, 6, 6);
+  background-color: #000000; /* Usar colores en notación hexadecimal */
   overflow: hidden; /* Evitar desplazamiento horizontal si el contenido es mayor */
   margin: 0px;
+  display: flex; /* Centro de contenido horizontal y vertical */
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilos para los enlaces del menú */
@@ -41,7 +45,7 @@ body {
   width: 50%;
   justify-content: space-around;
   align-items: center; /* Centrar verticalmente los elementos */
-  float: left;
+  float: center;
 }
 
 /* Cambio de color al pasar el mouse por encima */
@@ -71,19 +75,20 @@ body {
   display: grid;
   grid-template-columns: 1fr; /* Cambio a "1fr" para ocupar todo el ancho */
   align-items: center;
-  float: left;
+  float: center;
 }
 
 /* Estilos para títulos */
 h1, .h1 {
   font-size: 24px;
-  background: linear-gradient(270deg, #e3c4ab, #091f64);
+  background: linear-gradient(270deg, #70d8eb, #091f64);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #90b9c9;
+  -webkit-text-fill-color: #17f7fb;
 }
 
 .main .text-container {
   margin-top: 100px;
+  
 }
 
 /* Cambiar el color de las etiquetas <span> dentro de esta sección */
